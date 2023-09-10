@@ -42,7 +42,7 @@ module.exports = {
             template: path.join(__dirname, 'src', 'colorsType.pug'),
             filename: 'index.html',
         }),
-        
+
         new FileManagerPlugin({
             events: {
                 onStart: {
