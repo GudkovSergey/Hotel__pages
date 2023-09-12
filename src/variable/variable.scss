@@ -1,0 +1,111 @@
+//@import '../font/fonts.scss';
+// Colors
+
+$Dark_Shade_100: #1F2041;
+$Dark_Shade_75: rgba(31, 32, 65, 0.75);
+$Dark_Shade_50: rgba(31, 32, 65, 0.5);
+$Dark_Shade_25: rgba(31, 32, 65, 0.25);
+$Dark_Shade_5: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+//logotype
+
+@mixin logo {
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+
+//input
+@mixin input {
+  width: 100%;
+  max-width: 320px;
+  height: 44px;
+  border: 1px solid $Dark_Shade_25;
+  border-radius: 4px;
+  padding: 5px 5px 5px 15px;
+  font-size: 14px;
+  outline: none;
+  @include Montserrat-norm;
+
+}
+@mixin dropdown {
+  display: flex;
+  min-width: 150px;
+  margin-top: 5px;
+  padding-left: 0;
+  height: 44px;
+  border: 1px solid $Dark_Shade_25;
+  border-radius: 4px;
+  padding: 5px 5px 5px 15px;
+}
+@mixin dropdown-input{
+  @include input;
+  width: 80%;
+  max-width: 320px;
+  height: 35px;
+  padding: 3px 5px 5px 0px;
+  border: none;
+}
+@mixin dropdown-button{
+  width: 20%;
+  outline: none;
+  text-transform: uppercase;
+  background-color:white;
+  cursor: pointer;
+  border:none;
+  margin-left: 10px;
+}
+@mixin dropdown-icon{
+  color: $Dark_Shade_75;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+
+//Fonts
+
+@mixin Montserrat-norm {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin Montserrat-bold {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin Quicksand-bold {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin Quicksand-norm {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+}
+
+// flex
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
