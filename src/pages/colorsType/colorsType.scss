@@ -15,12 +15,12 @@
   min-width: 320px;
 }
 
-.logo img {
-  @include logo;
-}
-.logo{
-  width: 6%;
-}
+//.logo img {
+//  @include logo;
+//}
+//.logo{
+//  width: 6%;
+//}
 //---------------------------------------------------------------------box colors-------------------------------------------------------
 .box-colors {
   @include Montserrat-bold;

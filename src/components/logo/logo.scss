@@ -1,0 +1,9 @@
+@import '../../variable/variable';
+.container-logo{
+  width: 6%;
+}
+.logo {
+  @include logo;
+
+}
+

@@ -45,8 +45,13 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'src', 'colorsType.pug'),
-            filename: 'index.html',
+            filename: 'colorsType.html',
         }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'src', 'formElements.pug'),
+            filename: 'formElements.html',
+        }),
+
 
         new FileManagerPlugin({
             events: {

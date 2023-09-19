@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Formelements
+    link(rel="stylesheet", href="../fonts_icon/toxin_icon.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js")
+    script(src="../js/formElements.js")
+    script(src="../js/jquery.maskedinput.min.js")
+    script(src="../js/masked.js")
+body
+    .container
+
+        include components/logo/logo
+        .field-elements
+            .field-elements__field
+                .field-title
+                    .field-name Text Field
+                    .field-status Default
+
+                include components/textField/textField
+
+                .field-title
+                    .field-name Text Field
+                    .field-status Hover / Focus
+                include components/textField_hover/textField_hover
+                .field-title
+                    .field-name Dropdown
+                include components/dropdown__guest/dropdown__guest

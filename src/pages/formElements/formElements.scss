@@ -1,0 +1,151 @@
+@import './src/variable/variable';
+@import '../../assets/fonts/fonts';
+@import "../../components/textField/textField";
+@import '../../components/textField_hover/textField_hover';
+@import '../../components/dropdown__guest/dropdown__guest';
+@import '../../components/logo/logo';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  // @include flex-column;
+  max-width: 1440px;
+  min-width: 320px;
+  //border: 1px solid red;
+}
+
+.field-elements {
+  //border: 1px solid green;
+  width: 100%;
+}
+
+.field-elements__field {
+  display: inline-block;
+  position: relative;
+  margin-left: 141px;
+  margin-top: 65px;
+  width: 22.5%;
+  //border: 1px solid red;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+
+.field-title {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 20px;
+
+}
+
+.field-name {
+  max-width: 320px;
+  @include Montserrat-bold;
+  text-transform: uppercase;
+  color: $Dark_Shade_100;
+
+}
+
+.field-status {
+  max-width: 320px;
+  @include Montserrat-norm;
+  color: $Dark_Shade_50;
+
+}
+
+.sufix-buttton, .sufix-buttton:active, .sufix-buttton:focus {
+  @include dropdown-button;
+
+}
+
+.icon-sufix {
+  color: $Dark_Shade_75;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  margin-right: 3px;
+
+}
+
+.field-elements__masked {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.masked {
+  @include input;
+}
+
+.masked::placeholder {
+  color: $Dark_Shade_25;
+
+}
+
+.field-elements__date {
+  display: flex;
+  margin-top: 40px;
+
+}
+
+.container_date {
+  width: 46%;
+}
+
+.container_date-today {
+  width: 46%;
+  margin-left: 20px;
+}
+
+
+.field-elements__date_ordinary {
+  @include dropdown;
+  width: 46%;
+  min-width: 150px;
+}
+
+.field-elements__date_today {
+  @include dropdown;
+  width: 46%;
+  //margin-left: 20px ;
+  min-width: 150px;
+}
+
+#masked_date {
+  @include dropdown-input;
+
+}
+
+#masked_today {
+  @include dropdown-input;
+
+}
+
+
+.field-elements__date-filter {
+}
+
+.field-elements__subscription {
+}
+
+.field-elements__checkbox {
+}
+
+.field-elements__buttons {
+}

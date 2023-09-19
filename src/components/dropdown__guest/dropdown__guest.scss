@@ -1,0 +1,38 @@
+@import '../../variable/variable';
+.field-elements__guest {
+  display: flex;
+  margin-top: 5px;
+  padding-left: 0;
+  height: 44px;
+  border: 1px solid $Dark_Shade_25;
+  border-radius: 4px;
+  padding: 5px 5px 5px 0px;
+
+
+}
+.field-elements__guest:focus{
+
+  border: 1px solid $Dark_Shade_75;
+}
+
+#guest {
+  @include input;
+  width: 90%;
+  max-width: 320px;
+  height: 35px;
+  padding: 3px 5px 5px 15px;
+  border: none;
+
+
+
+}
+
+#guest::placeholder {
+
+  color: $Dark_Shade_75;
+}
+#guest:focus{
+
+  border: 1px solid $Dark_Shade_75;
+
+}

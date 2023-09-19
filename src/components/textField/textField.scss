@@ -1,0 +1,20 @@
+@import '../../variable/variable';
+.field-elements__email {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+ #mail {
+  @include input;
+}
+
+#mail::placeholder {
+  color: $Dark_Shade_25;
+
+}
+#mail:focus{
+
+  border: 1px solid $Dark_Shade_75;
+
+}
