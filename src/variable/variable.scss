@@ -1,4 +1,4 @@
-//@import '../fonts/fonts.scss';
+@import '../../src/assets/fonts/fonts';
 // Colors
 
 $Dark_Shade_100: #1F2041;
@@ -25,9 +25,10 @@ $green: #6FCF97;
 @mixin input {
   width: 100%;
   max-width: 320px;
-  height: 44px;
-  border: 1px solid $Dark_Shade_25;
-  border-radius: 4px;
+  //height: 44px;
+  //border: 1px solid $Dark_Shade_25;
+  border:none;
+  //border-radius: 4px;
   padding: 5px 5px 5px 15px;
   font-size: 14px;
   outline: none;

@@ -1,38 +1,54 @@
 @import '../../variable/variable';
+
 .field-elements__guest {
-  display: flex;
+  display: inline-flex;
+  width: 100%;
+  height: 44px;
   margin-top: 5px;
   padding-left: 0;
-  height: 44px;
   border: 1px solid $Dark_Shade_25;
   border-radius: 4px;
-  padding: 5px 5px 5px 0px;
+  align-items: center;
+  text-align: center;
+
 
 
 }
-.field-elements__guest:focus{
+
+.field-elements__guest:hover {
 
   border: 1px solid $Dark_Shade_75;
 }
 
-#guest {
+
+.guest {
   @include input;
+
   width: 90%;
-  max-width: 320px;
-  height: 35px;
-  padding: 3px 5px 5px 15px;
+  height: 20px;
   border: none;
-
-
-
 }
 
-#guest::placeholder {
-
+.guest[placeholder] {
   color: $Dark_Shade_75;
 }
-#guest:focus{
 
-  border: 1px solid $Dark_Shade_75;
+.sufix-buttton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0 ;
+
+}
+
+.icon-sufix {
+  color: var(--dark-50, rgba(31, 32, 65, 0.50));
+  text-align: center;
+  font-family: Material Icons;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
 }

@@ -2,10 +2,11 @@ doctype html
 head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet" href="src/assets/icons.css")
     title logo
 body
-    form(action="#").field-elements__guest
-        input(id="guest" type="text" placeholder="Сколько гостей")
+    form(action="#").field-elements__guest.active
+        input(class="guest" type="text" placeholder="Сколько гостей")
         button(class="sufix-buttton icon-sufix " type="submit" )
 
 script(src='../components/dropdown_guest/dropdown_guest.js')
