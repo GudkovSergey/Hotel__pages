@@ -3,17 +3,14 @@ html(lang="en")
 head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
     title Formelements
-    link(rel="stylesheet", href="../assets/fonts_icon/toxin_icon.css")
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js")
-    script(src="../js/formElements.js")
-    script(src="../js/jquery.maskedinput.min.js")
-    script(src="../js/masked.js")
 body
+
+    include components/logo/logo
     .container
 
-        include components/logo/logo
+
         .field-elements
             .field-elements__field
                 .field-title
@@ -29,3 +26,9 @@ body
                 .field-title
                     .field-name Dropdown
                 include components/dropdown__guest/dropdown__guest
+                .field-title
+                    .field-name masked text field
+                include components/maskedField/maskedField
+        .allButtons
+        .pagination
+script(src="../js/formElements.js")

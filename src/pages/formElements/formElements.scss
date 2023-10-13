@@ -1,38 +1,44 @@
 @import './src/variable/variable';
 @import '../../assets/fonts/fonts';
-@import "../../components/textField/textField";
-@import '../../components/textField_hover/textField_hover';
-@import '../../components/dropdown__guest/dropdown__guest';
-@import '../../components/logo/logo';
 @import '../../assets/icons.css';
 
 * {
-  margin: 0;
+  //margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  display: block;
+body{
+  width: 1440px;
+  height: 100vh;
   margin: 0 auto;
-  // @include flex-column;
-  max-width: 1440px;
-  min-width: 320px;
-  //border: 1px solid red;
+
+}
+
+.container{
+  margin: 0;
+  width: 100%;
+
+
 }
 
 .field-elements {
   //border: 1px solid green;
-  width: 100%;
+  width: 33.3%;
+  margin-left: 141px;
+  margin-top: 50px;
 }
 
 .field-elements__field {
-  display: inline-block;
-  position: relative;
-  margin-left: 141px;
-  margin-top: 65px;
-  width: 22.5%;
-  //border: 1px solid red;
+  width: 320px;
+
+}
+.allButtons{
+  width: 33.3%;
+  border: 1px solid red;
+}
+.pagination{
+  width: 33.3%;
+  border: 1px solid red;
 }
 
 input:invalid {
@@ -57,6 +63,7 @@ input:invalid {
   text-transform: uppercase;
   color: $Dark_Shade_100;
 
+
 }
 
 .field-status {
@@ -66,22 +73,6 @@ input:invalid {
 
 }
 
-.sufix-buttton, .sufix-buttton:active, .sufix-buttton:focus {
-  @include dropdown-button;
-
-}
-
-.icon-sufix {
-  color: $Dark_Shade_75;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  margin-right: 3px;
-
-}
 
 .field-elements__masked {
   display: block;

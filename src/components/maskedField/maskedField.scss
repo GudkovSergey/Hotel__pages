@@ -1,0 +1,21 @@
+@import '../../variable/variable';
+.field-elements__masked {
+  display: inline-flex;
+  width: 100%;
+  height: 44px;
+  margin-top: 5px;
+  padding-left: 0;
+  border: 1px solid $Dark_Shade_25;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+
+}
+.masked{
+  @include input;
+}
+.masked::placeholder {
+  color: $Dark_Shade_75;
+
+
+}
