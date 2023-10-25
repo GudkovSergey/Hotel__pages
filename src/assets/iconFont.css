@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src:  url('../fontsIcon/icons.eot?jq66j1');
-  src:  url('../fontsIcon/icons.eot?jq66j1#iefix') format('embedded-opentype'),
-    url('../fontsIcon/icons.ttf?jq66j1') format('truetype'),
-    url('../fontsIcon/icons.woff?jq66j1') format('woff'),
-    url('../fontsIcon/icons.svg?jq66j1#icons') format('svg');
+  src:  url('../fontsIcon/icons.eot?bw3em');
+  src:  url('../fontsIcon/icons.eot?bw3em#iefix') format('embedded-opentype'),
+    url('../fontsIcon/icons.ttf?bw3em') format('truetype'),
+    url('../fontsIcon/icons.woff?bw3em') format('woff'),
+    url('../fontsIcon/icons.svg?bw3em#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]::before, [class*=" icon-"]::before {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_left:before {
+  content: "\e90a";
+}
 .icon-favorite:before {
   content: "\e900";
 }
@@ -54,5 +57,4 @@
 }
 .icon-sufix_up:before {
   content: "\e909";
-
 }

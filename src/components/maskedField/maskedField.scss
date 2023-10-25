@@ -11,6 +11,9 @@
   text-align: center;
 
 }
+.field-elements__masked:hover{
+  border: 1px solid $Dark_Shade_75;
+}
 .masked{
   @include input;
 }
