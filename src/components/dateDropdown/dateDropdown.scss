@@ -88,6 +88,7 @@
     min-width: 40px;
     min-height: 40px;
   }
+
 }
 
 .air-datepicker-cell.-year- {
@@ -115,15 +116,15 @@
 }
 
 
-.arrow__prev {
+ .arrow__prev {
   margin-top: 20px;
   margin-left: 10px;
+
 }
 
-.arrow__prev {
-   svg path {
-    fill: red !important;
-  }
+.arrow__prev path {
+  stroke-opacity: 0.0;
+  fill: #BC9CFF !important;
 
 }
 
@@ -131,7 +132,10 @@
   margin-top: 20px;
   margin-right: 10px;
 }
+.arrow__next path {
+  stroke-opacity: 0.0;
+  fill: #BC9CFF !important;
 
-.arrow__next {
-  fill: red;
 }
+
+
