@@ -1,9 +1,11 @@
 @import '../../variable/variable';
+@import "../datapickerPluginSetting/datapicker";
 
 
 .field-elements_dateDropdown {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 46.8%;
   height: 44px;
   margin-top: 5px;
   padding-left: 0;
@@ -23,24 +25,23 @@
   @include input;
 
   width: 80%;
-  height: 20px;
-  border: none;
+  //height: 20px;
+ // border: none;
 }
 
 .datepicker[placeholder] {
   color: $Dark_Shade_75;
 }
 
-.sufix-buttton {
-
-  width: 20%;
-  height: 100%;
+.field-elements_dateDropdown .sufix-buttton {
+  margin-right: 10px;
+  width:44px;
   outline: none;
-  background-color: white;
+  background-color:white;
   cursor: pointer;
   border: none;
-  padding-top: 5px;
-
+  border-radius: 4px;
+  padding-bottom: 5px;
 
 }
 
@@ -55,90 +56,5 @@
 
 }
 
-.air-datepicker-cell {
-  border-radius: 50% !important;
-
-  color: $Dark_Shade_75 !important;
-  font-family: Montserrat !important;
-  font-size: 12px !important;
-  min-width: 40px;
-  min-height: 40px;
-
-  &.-focus- {
-    background: var(--Primary-Gradient, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)) !important;
-
-  }
-}
-
-.air-datepicker {
-  border-radius: 4px !important;
-  border: 1px solid rgba(0, 0, 0, 0.12) !important;
-
-  background: #FFF !important;
-
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.20) !important;
-  min-width: 320px;
-  min-height: 369px;
-
-}
-
-.air-datepicker-cell.-day- {
-  &.-other-month-, {
-    color: $Dark_Shade_50 !important;
-    min-width: 40px;
-    min-height: 40px;
-  }
-
-}
-
-.air-datepicker-cell.-year- {
-  &.-other-decade-, {
-    color: $Dark_Shade_75 !important;
-  }
-}
-
-.air-datepicker-body--day-name {
-  color: #BC9CFF !important;
-  font-size: 12px !important;
-  margin-top: 30px;
-
-}
-
-.air-datepicker-nav--title {
-  margin-top: 20px !important;
-  font-size: 19px !important;
-  color: $Dark_Shade_100 !important;
-  font-weight: 700 !important;
-    i{
-      color: $Dark_Shade_100 !important;
-    }
-}
-
-.air-datepicker-nav--action[data-action="next"] {
-
-}
-
-
- .arrow__prev {
-  margin-top: 20px;
-  margin-left: 10px;
-
-}
-
-.arrow__prev path {
-  stroke-opacity: 0.0;
-  fill: #BC9CFF !important;
-
-}
-
-.arrow__next {
-  margin-top: 20px;
-  margin-right: 10px;
-}
-.arrow__next path {
-  stroke-opacity: 0.0;
-  fill: #BC9CFF !important;
-
-}
 
 
