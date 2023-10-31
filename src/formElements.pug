@@ -29,9 +29,15 @@ body
                 .field-title
                     .field-name masked text field
                 include components/maskedField/maskedField
-                .field-title
-                    .field-name DATE DROPDOWN
-                include components/dateDropdown/dateDropdown
+                .field-elements__field__datapicker-container
+                    .datapicker-container
+                        .field-title
+                            .field-name DATE DROPDOWN
+                        include components/dateDropdown/dateDropdown
+                    .datapicker__today-container
+                        .field-title
+                            .field-name DATE DROPDOWN
+                        include components/dateDropdownToday/dateDropdown__today
         .allButtons
         .pagination
 script(src="../js/formElements.js")

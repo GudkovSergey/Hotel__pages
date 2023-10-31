@@ -1,14 +1,7 @@
-doctype html
-head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    script(src="https://code.jquery.com/jquery-3.7.1.js" )
-    //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer")
 
-    title maskedTextField
 body
     form(action="#").field-elements__masked
         input(id='date'  class="masked dateMask" type="text" placeholder="ДД.ММ.ГГГГ" )
 
-
-script(src='../components/maskedField/maskedField.js')
+    script(src="https://code.jquery.com/jquery-3.7.1.js" )
+    script(src='../components/maskedField/maskedField.js')

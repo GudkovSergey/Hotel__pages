@@ -56,6 +56,22 @@ input:invalid {
   margin-top: 20px;
 
 }
+.field-elements__field__datapicker-container{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.datapicker-container{
+  width: 50%;
+
+}
+
+
+.datapicker__today-container{
+  width: 50%;
+  margin-left: 20px;
+}
 
 .field-name {
   max-width: 320px;

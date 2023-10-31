@@ -21,12 +21,12 @@
 }
 
 
-.datepicker {
+.datapicker__today {
   @include input;
 
   width: 80%;
   //height: 20px;
- // border: none;
+  // border: none;
 }
 
 .datepicker[placeholder] {
@@ -55,6 +55,3 @@
 
 
 }
-
-
-
