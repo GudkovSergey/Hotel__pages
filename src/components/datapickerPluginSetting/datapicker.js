@@ -2,7 +2,7 @@ import 'air-datepicker/air-datepicker.css';
 
 //В качестве аргументов передаем опции из документации air datapicker . В компоненте создаем переменную с тем же именем и  значением опции и вставляем аргументом.
 
- export let datapickerConfig =(selectedDates)=>{
+ export let datapickerConfig =(selectedDates,range,dateFormat)=>{
     return {
         buttons: ['clear',
             {
@@ -10,6 +10,9 @@ import 'air-datepicker/air-datepicker.css';
                     return 'Применить'
                 }
             }],
+        range: range,
+        multipleDatesSeparator: '-',
+        dateFormat:dateFormat,
 
         selectedDates: selectedDates,
         prevHtml: '<svg class="arrow__prev" width="17" height="18" viewBox="0 0 17 18"  xmlns="http://www.w3.org/2000/svg">\n' +
