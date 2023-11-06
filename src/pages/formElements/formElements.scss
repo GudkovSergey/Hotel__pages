@@ -7,14 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   width: 1440px;
   height: 100vh;
   margin: 0 auto;
 
 }
 
-.container{
+.container {
   margin: 0;
   width: 100%;
 
@@ -29,14 +30,17 @@ body{
 }
 
 .field-elements__field {
-  width: 320px;
+ //width: 320px;
+  //height: 44px;
 
 }
-.allButtons{
+
+.allButtons {
   width: 33.3%;
   border: 1px solid red;
 }
-.pagination{
+
+.pagination {
   width: 33.3%;
   border: 1px solid red;
 }
@@ -47,8 +51,8 @@ input:invalid {
 
 
 .field-title {
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
+  //max-width: 320px;
   display: flex;
   justify-content: space-between;
   font-size: 12px;
@@ -56,25 +60,34 @@ input:invalid {
   margin-top: 20px;
 
 }
-.field-elements__field__datapicker-container{
+
+.field-elements__field__datapicker-container {
   display: flex;
   flex-direction: row;
 
 
+
 }
 .datapicker-container{
-  width: 50%;
-
+  width: 150px;
 }
-
-
-.datapicker__today-container{
-  width: 50%;
+.datapicker__today-container {
+  width: 150px;
   margin-left: 20px;
 }
 
+.datapicker-container form{
+width: 100%;
+}
+
+
+.datapicker__today-container form {
+width: 100%;
+
+
+}
+
 .field-name {
-  max-width: 320px;
   @include Montserrat-bold;
   text-transform: uppercase;
   color: $Dark_Shade_100;
@@ -83,77 +96,11 @@ input:invalid {
 }
 
 .field-status {
-  max-width: 320px;
   @include Montserrat-norm;
   color: $Dark_Shade_50;
 
 }
 
 
-.field-elements__masked {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin-top: 5px;
-}
-
-.masked {
-  @include input;
-}
-
-.masked::placeholder {
-  color: $Dark_Shade_25;
-
-}
-
-.field-elements__date {
-  display: flex;
-  margin-top: 40px;
-
-}
-
-.container_date {
-  width: 46%;
-}
-
-.container_date-today {
-  width: 46%;
-  margin-left: 20px;
-}
 
 
-.field-elements__date_ordinary {
-  @include dropdown;
-  width: 46%;
-  min-width: 150px;
-}
-
-.field-elements__date_today {
-  @include dropdown;
-  width: 46%;
-  //margin-left: 20px ;
-  min-width: 150px;
-}
-
-#masked_date {
-  @include dropdown-input;
-
-}
-
-#masked_today {
-  @include dropdown-input;
-
-}
-
-
-.field-elements__date-filter {
-}
-
-.field-elements__subscription {
-}
-
-.field-elements__checkbox {
-}
-
-.field-elements__buttons {
-}

@@ -1,8 +1,8 @@
 @import '../../variable/variable';
 
-.field-elements__guest {
+.field-elements_subscribe {
   display: inline-flex;
-  width: 320px;
+  width: 266px;
   height: 44px;
   margin-top: 5px;
   padding-left: 0;
@@ -12,13 +12,13 @@
   text-align: center;
 }
 
-.field-elements__guest:hover {
+.field-elements_subscribe:hover {
 
   border: 1px solid $Dark_Shade_75;
 }
 
 
-.guest {
+.subscribe{
   @include input;
 
   width: 80%;
@@ -26,30 +26,35 @@
   border: none;
 }
 
-.guest::placeholder {
-  color: $Dark_Shade_75;
+.subscribe::placeholder{
+  color: $Dark_Shade_25;
+  font-size: 14px;
 }
 
-.sufix-buttton {
+.rigt-buttton {
+
   width: 20%;
   height: 100%;
   outline: none;
   background-color:white;
   cursor: pointer;
   border:none;
-  border-radius: 4px;
+
 
 
 
 }
 
-.icon-sufix{
+.icon-right{
   color:$Dark_Shade_50;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   vertical-align: baseline;
-
+  background: var(--Primary-Gradient, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%));
+  //background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }

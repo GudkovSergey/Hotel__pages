@@ -7,3 +7,4 @@ import '../../components/maskedField/maskedField';
 import  '../../components/dateDropdown/dateDropdown';
 import '../../components/dateDropdownToday/dateDropdown__today';
 import '../../components/filterDateDropdown/filterDateDropdown';
+import '../../components/subscribeTextField/subscribeTextField';
