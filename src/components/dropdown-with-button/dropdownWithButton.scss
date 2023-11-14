@@ -1,55 +1,26 @@
 @import '../../variable/variable';
 
 .field-elements__guest {
-  display: inline-flex;
-  width: 320px;
-  height: 44px;
-  margin-top: 5px;
-  padding-left: 0;
-  border: 1px solid $Dark_Shade_25;
-  border-radius: 4px;
-  align-items: center;
-  text-align: center;
+ @include field;
 }
 
 .field-elements__guest:hover {
-
   border: 1px solid $Dark_Shade_75;
 }
 
-
 .guest {
   @include input;
-
   width: 80%;
-  height: 20px;
-  border: none;
 }
 
 .guest::placeholder {
   color: $Dark_Shade_75;
 }
 
-.sufix-buttton {
-  width: 20%;
-  height: 100%;
-  outline: none;
-  background-color:white;
-  cursor: pointer;
-  border:none;
-  border-radius: 4px;
-
-
-
+.field-elements__guest__sufix-buttton{
+ @include sufix_button;
 }
 
 .icon-sufix{
-  color:$Dark_Shade_50;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  vertical-align: baseline;
-
-
+  @include icon_sufix;
 }

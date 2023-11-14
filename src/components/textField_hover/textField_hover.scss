@@ -1,15 +1,7 @@
 @import '../../variable/variable';
 
 .field-elements_hover {
-  display: inline-flex;
-  width: 320px;
-  height: 44px;
-  margin-top: 5px;
-  padding-left: 0;
-  border: 1px solid $Dark_Shade_25;
-  border-radius: 4px;
-  align-items: center;
-  text-align: center;
+ @include field;
 }
 .field-elements_hover:hover{
   border: 1px solid $Dark_Shade_75;
@@ -22,19 +14,15 @@
 }
 
 .textField_hover::placeholder {
-
   color: $Dark_Shade_25;
-  //color: transparent;
+
 }
 
 .textField_hover:focus::placeholder {
-  //color:transparent;
   color: $Dark_Shade_75;
-
 }
 
 .textField_hover:hover::placeholder {
-  //color:transparent;
   color: $Dark_Shade_75;
 }
  .textField_hover:focus{

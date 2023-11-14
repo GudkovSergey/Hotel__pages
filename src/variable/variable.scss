@@ -1,5 +1,5 @@
 @import '../../src/assets/fonts/fonts';
-// Colors
+// --------------------------------------------------Colors-------------------------------------------------------
 
 $Dark_Shade_100: #1F2041;
 $Dark_Shade_75: rgba(31, 32, 65, 0.75);
@@ -9,7 +9,7 @@ $Dark_Shade_5: rgba(31, 32, 65, 0.05);
 $purple: #BC9CFF;
 $green: #6FCF97;
 
-//logotype
+//------------------------------------------------logotype----------------------------------------------------
 
 @mixin logo {
   width: 48px;
@@ -21,59 +21,50 @@ $green: #6FCF97;
 
 }
 
-//input
+//--------------------------------------------------------input---------------------------------------
 @mixin input {
   width: 100%;
   max-width: 320px;
-  //height: 44px;
-  //border: 1px solid $Dark_Shade_25;
   border:none;
-  //border-radius: 4px;
   padding: 5px 5px 5px 15px;
   font-size: 14px;
   outline: none;
   @include Montserrat-norm;
 
 }
-@mixin dropdown {
+//----------------------------------------field and  date dropdown-------------------------------
+@mixin field {
   display: flex;
-  min-width: 150px;
-  margin-top: 5px;
-  padding-left: 0;
+  justify-content: flex-end;
+  width: 320px;
   height: 44px;
+  margin-top: 5px;
   border: 1px solid $Dark_Shade_25;
   border-radius: 4px;
-  padding: 5px 5px 5px 15px;
-}
-@mixin dropdown-input{
-  @include input;
-  width: 80%;
-  max-width: 320px;
-  height: 35px;
-  padding: 3px 5px 5px 0px;
-  border: none;
-}
-@mixin dropdown-button{
-  width: 20%;
-  outline: none;
-  text-transform: uppercase;
-  background-color:white;
-  cursor: pointer;
-  border:none;
-  margin-left: 10px;
-}
-@mixin dropdown-icon{
-  color: $Dark_Shade_75;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
   align-items: center;
   text-align: center;
 }
+@mixin icon_sufix{
+  color: $Dark_Shade_50;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: baseline;
+}
+@mixin sufix_button{
+  width: 30%;
+  outline: none;
+  background-color:white;
+  cursor: pointer;
+  border:none;
+  border-radius: 4px;
+}
 
 
-//Fonts
+
+
+//----------------------------------------------------Fonts---------------------------------------------------
 
 @mixin Montserrat-norm {
   font-family: "Montserrat";
@@ -100,7 +91,7 @@ $green: #6FCF97;
   font-weight: normal;
 }
 
-// flex
+// ----------------------------------------------------flex-------------------------------------------------------
 
 @mixin flex-row {
   display: flex;

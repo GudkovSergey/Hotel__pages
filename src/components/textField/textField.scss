@@ -1,14 +1,6 @@
 @import '../../variable/variable';
 .field-elements__email {
-  display: inline-flex;
-  width: 320px;
-  height: 44px;
-  margin-top: 5px;
-  padding-left: 0;
-  border: 1px solid $Dark_Shade_25;
-  border-radius: 4px;
-  align-items: center;
-  text-align: center;
+ @include field;
 }
 .field-elements__email:hover{
   border: 1px solid $Dark_Shade_75;

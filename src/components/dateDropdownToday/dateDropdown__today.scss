@@ -2,56 +2,31 @@
 @import "../datapickerPluginSetting/datapicker";
 
 
-.field-elements_dateDropdown {
-  display: flex;
-  justify-content: flex-end;
+.field-elements_dateDropdown_today {
+  @include field;
   width: 150px;
-  height: 44px;
-  margin-top: 5px;
-  padding-left: 0;
-  border: 1px solid $Dark_Shade_25;
-  border-radius: 4px;
-  align-items: center;
-  text-align: center;
 }
 
-.field-elements_dateDropdown:hover {
-
+.field-elements_dateDropdown_today:hover {
   border: 1px solid $Dark_Shade_75;
 }
 
-
 .datapicker__today {
   @include input;
-
   width: 80%;
-  //height: 20px;
-  // border: none;
+
 }
 
 .datepicker[placeholder] {
   color: $Dark_Shade_75;
 }
 
-.field-elements_dateDropdown .sufix-buttton {
-  margin-right: 10px;
-  width:44px;
-  outline: none;
-  background-color:white;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  padding-bottom: 5px;
+
+.field-elements_dateDropdown_today__sufix-buttton{
+  @include sufix_button
 
 }
 
-.icon-sufix {
-  color: $Dark_Shade_50;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  vertical-align: baseline;
-
-
+.icon-sufix{
+  @include icon_sufix;
 }
