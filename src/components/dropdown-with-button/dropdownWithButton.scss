@@ -21,6 +21,7 @@
  @include sufix_button;
 }
 
-.icon-sufix{
+.field-elements__guest .icon-sufix{
   @include icon_sufix;
+  padding-left: 40px;
 }

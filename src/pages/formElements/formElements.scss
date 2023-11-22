@@ -1,4 +1,4 @@
-@import './src/variable/variable';
+@import '../../variable/variable';
 @import '../../assets/fonts/fonts';
 @import '../../assets/iconFont.css';
 
@@ -9,21 +9,25 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 1440px;
   height: 100vh;
   margin: 0 auto;
 
 }
 
-.container {
+.container__block1 {
+  display: flex;
   margin: 0;
   width: 100%;
+  flex-direction: row;
 
 
 }
 
 .field-elements {
-  //border: 1px solid green;
+  border: 1px solid green;
   width: 33.3%;
   margin-left: 141px;
   margin-top: 50px;
@@ -36,13 +40,39 @@ body {
 }
 
 .allButtons {
+  margin-top: 50px;
   width: 33.3%;
   border: 1px solid red;
 }
 
 .pagination {
+  margin-top: 50px;
   width: 33.3%;
   border: 1px solid red;
+}
+
+.container__block2{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+}
+.dropdown-list_furniture{
+  border: 1px solid green;
+  width: 33.3%;
+  margin-left: 141px;
+  margin-top: 50px;
+}
+.dropdown-list_people_default{
+  width: 33.3%;
+  border: 1px solid red;
+}
+.dropdown-list_people_selected{
+  width: 33.3%;
+  border: 1px solid red;
+}
+.container__block3{
+
 }
 
 input:invalid {

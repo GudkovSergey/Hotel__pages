@@ -8,7 +8,7 @@ head
 body
 
     include components/logo/logo
-    .container
+    .container__block1
 
 
         .field-elements
@@ -49,4 +49,13 @@ body
         .allButtons
 
         .pagination
+    .container__block2
+        .dropdown-list_furniture
+            .field-title
+                .field-name Dropdown
+            include components/dropdown-with-button/dropdownWithButton
+        .dropdown-list_people_default
+        .dropdown-list_people_selected
+    .container__block3
+
 script(src="../js/formElements.js")
