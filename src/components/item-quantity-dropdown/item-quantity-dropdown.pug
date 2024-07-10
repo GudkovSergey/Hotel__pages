@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title dropdownWithButton
+body
+    .item-quantity-container
+        include dropdown-with-button/dropdownWithButton
+    .dropdown-list
+        ul.dropdownWithCounter
+            li.counter1.list
+                div.counterItem
+                .buttonContainer
+                    button.minus -
+                    .countNumber
+                    button.plus +
+            li.counter2.list
+                div.counterItem
+                .buttonContainer
+                    button.minus -
+                    .countNumber
+                    button.plus +
+            li.counter3.list
+                div.counterItem
+                .buttonContainer
+                    button.minus -
+                    .countNumber
+                    button.plus +
+
+
+
+
+
+
+
+script(src='../components/item-quantity-dropdown/item-quantity-dropdown.js')

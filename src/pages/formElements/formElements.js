@@ -1,10 +1,12 @@
 import './formElements.scss';
 import '../../components/logo/logo';
 import '../../components/textField/textField';
-import '../../components/dropdown-with-button/dropdownWithButton';
+import '../../components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton';
 import '../../components/textField_hover/textField_hover';
 import '../../components/maskedField/maskedField';
 import '../../components/dateDropdown/dateDropdown';
 import '../../components/dateDropdownToday/dateDropdown__today';
 import '../../components/filterDateDropdown/filterDateDropdown';
 import '../../components/subscribeTextField/subscribeTextField';
+import '../../components/item-quantity-dropdown/item-quantity-dropdown';
+import '../../components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton';

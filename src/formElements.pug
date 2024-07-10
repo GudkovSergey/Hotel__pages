@@ -25,7 +25,7 @@ body
                 include components/textField_hover/textField_hover
                 .field-title
                     .field-name Dropdown
-                include components/dropdown-with-button/dropdownWithButton
+                include components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton
                 .field-title
                     .field-name masked text field
                 include components/maskedField/maskedField
@@ -53,7 +53,13 @@ body
         .dropdown-list_furniture
             .field-title
                 .field-name Dropdown
-            include components/dropdown-with-button/dropdownWithButton
+                .field-status DEFAULT
+            include components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton
+            .field-title
+                .field-name DROPDOWN
+                .field-status EXPANDED
+            include components/item-quantity-dropdown/item-quantity-dropdown
+
         .dropdown-list_people_default
         .dropdown-list_people_selected
     .container__block3

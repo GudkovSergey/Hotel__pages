@@ -1,0 +1,83 @@
+@import '../../variable/variable';
+body{
+  margin: 0 auto;
+}
+.dropdownWithCounter{
+width: 266px;
+  display: flex;
+  flex-direction: column;
+}
+.list{
+
+  //justify-content: start;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+padding-left: 15px;
+}
+.counter1.list{
+margin-top: 13px;
+
+}
+.counter2.list{
+  margin-top: 22px;
+}
+.counter3.list{
+  margin-top: 22px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.countNumber{
+  text-align: center;
+
+
+
+}
+.buttonContainer{
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 89px;
+  //margin-right: 11px;
+}
+
+.minus, .plus{
+
+  width: 30px;
+  height: 30px;
+
+  background-color: white;
+  border: 1px solid $Dark_Shade_25;
+  border-radius: 50%;
+}
+.dropdown-list{
+  border: 1px solid $Dark_Shade_25;
+  width: 266px;
+
+}
+.list{
+  @include Montserrat-bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+.counter3>.buttonContainer{
+  margin-left: 32px;
+
+
+}
+.counter1>.buttonContainer{
+  //margin-left: 92px;
+
+
+}
+.counter2>.buttonContainer{
+  //margin-left: 19px;
+  margin-right: 7px;
+}
+.field-status{
+
+}

@@ -1,7 +1,8 @@
-@import '../../variable/variable';
+@import '../../../variable/variable';
 
 .field-elements__guest {
  @include field;
+  width: 266px;
 }
 
 .field-elements__guest:hover {
