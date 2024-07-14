@@ -1,14 +1,10 @@
-doctype html
-html(lang="en")
-head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+include dropdown-with-button/_dropdownWithButton
 
-    title dropdownWithButton
-body
+mixin itemQuantityDropdown
     .item-quantity-container
-        include dropdown-with-button/dropdownWithButton
-    .dropdown-list
+      +dropdownWithButton
+
+      .dropdown-list
         ul.dropdownWithCounter
             li.counter1.list
                 div.counterItem
@@ -28,11 +24,5 @@ body
                     button.minus -
                     .countNumber
                     button.plus +
-
-
-
-
-
-
 
 script(src='../components/item-quantity-dropdown/item-quantity-dropdown.js')

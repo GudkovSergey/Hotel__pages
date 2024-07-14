@@ -1,3 +1,4 @@
+include ./mixin_Pug/mixinBlock
 doctype html
 html(lang="en")
 head
@@ -6,8 +7,75 @@ head
 
     title Formelements
 body
+    include ./components/logo/_logo
+    .container
 
-    include components/logo/logo
+        .box-colors
+            .box-colors__content
+                .box-colors_size.dark_100
+                .box-colors__title_name
+                    | Dark Shade 100%
+                    br
+                    | #1F2041
+            .box-colors__content
+                .box-colors_size.dark_75
+                .box-colors__title_name
+                    | Dark Shade 75%
+                    br
+                    | #1F2041
+            .box-colors__content
+                .box-colors_size.dark_50
+                .box-colors__title_name
+                    | Dark Shade 50%
+                    br
+                    | #1F2041
+            .box-colors__content
+                .box-colors_size.dark_25
+                .box-colors__title_name
+                    | Dark Shade 25%
+                    br
+                    | #1F2041
+            .box-colors__content
+                .box-colors_size.dark_5
+                .box-colors__title_name
+                    | Dark Shade 5%
+                    br
+                    | #1F2041
+            .box-colors__content
+                .box-colors_size.purple
+                .box-colors__title_name
+                    | Purple
+                    br
+                    | #BC9CFF
+            .box-colors__content
+                .box-colors_size.green
+                .box-colors__title_name
+                    | Green
+                    br
+                    | #6FCF97
+        .box-widget
+            .box-wiget__content
+                .box-widget__widget_h1 H1
+                .box-wiget__title_h1
+                    | This one is the sub-section or
+                    br
+                    | widget title
+            .box-wiget__content
+                .box-widget__widget_h2 H2
+                .box-wiget__title_h2
+                    | Next one is the item title inside
+                    br
+                    | widgets
+            .box-wiget__content
+                .box-widget__widget_h3 H3
+                .box-wiget__title_h3 This is a label or CTA text
+            .box-wiget__content
+                .box-widget__widget_body Body
+                .box-wiget__title_body
+                    | This is the body text which is used for most
+                    br
+                    |                     of the design, like paragraphs, lists, etc.
+    include ./components/logo/_logo
     .container__block1
 
 
@@ -17,34 +85,34 @@ body
                     .field-name Text Field
                     .field-status Default
 
-                include components/textField/textField
+                +textField
 
                 .field-title
                     .field-name Text Field
                     .field-status Hover / Focus
-                include components/textField_hover/textField_hover
+                +textField_hover
                 .field-title
                     .field-name Dropdown
-                include components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton
+                +dropdownWithButton
                 .field-title
                     .field-name masked text field
-                include components/maskedField/maskedField
+                +maskedField
                 .field-elements__field__datapicker-container
                     .datapicker-container
                         .field-title
                             .field-name DATE DROPDOWN
-                        include components/dateDropdown/dateDropdown
+                        +dateDropdown
                     .datapicker__today-container
                         .field-title
                             .field-name DATE DROPDOWN
 
-                        include components/dateDropdownToday/dateDropdown__today
+                        +dateDropdownToday
                 .field-title
                     .field-name filter date dropdown
-                include components/filterDateDropdown/filterDateDropdown
+                +filterDateDropdown
                 .field-title
                     .field-name Dropdown
-                include components/subscribeTextField/subscribeTextField
+                +subscribeTextField
 
         .allButtons
 
@@ -54,11 +122,11 @@ body
             .field-title
                 .field-name Dropdown
                 .field-status DEFAULT
-            include components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton
+            +dropdownWithButton
             .field-title
                 .field-name DROPDOWN
                 .field-status EXPANDED
-            include components/item-quantity-dropdown/item-quantity-dropdown
+            +itemQuantityDropdown
 
         .dropdown-list_people_default
         .dropdown-list_people_selected

@@ -19,9 +19,12 @@ body {
 
 .container__block1 {
   display: flex;
-  margin: 0;
-  width: 100%;
+  //margin: 0;
+  //width: 100%;
   flex-direction: row;
+  border: 1px solid green;
+  margin-left: 141px;
+  margin-top: 62px;
 
 
 }
@@ -29,8 +32,8 @@ body {
 .field-elements {
   //border: 1px solid green;
   width: 33.3%;
-  margin-left: 141px;
-  margin-top: 50px;
+  //margin-left: 141px;
+  //margin-top: 50px;
 }
 
 .field-elements__field {

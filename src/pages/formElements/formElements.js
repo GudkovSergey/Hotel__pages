@@ -1,4 +1,5 @@
 import './formElements.scss';
+import '../colorsType/colorsType';
 import '../../components/logo/logo';
 import '../../components/textField/textField';
 import '../../components/item-quantity-dropdown/dropdown-with-button/dropdownWithButton';

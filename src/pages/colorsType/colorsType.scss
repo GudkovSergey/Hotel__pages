@@ -9,10 +9,15 @@
 }
 
 .container {
-  margin: 0 auto;
+  //margin: 0 auto;
   @include flex-row;
   max-width: 1440px;
   min-width: 320px;
+  margin-top: 67px;
+  border: 1px solid red ;
+
+  margin-left: 149.74px;
+  border-bottom: 1px solid gray;
 }
 
 //.logo img {
@@ -26,8 +31,8 @@
   @include Montserrat-bold;
   @include flex-column;
   justify-content: space-between;
-  margin-top: 148px;
-  margin-left: 62px;
+  //margin-top: 0px;
+  //margin-left: 62px;
   width: 40%;
 
 }
