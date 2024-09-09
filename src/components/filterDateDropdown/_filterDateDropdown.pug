@@ -1,9 +1,11 @@
+
+include ../../mixin_Pug/mixinButton/sufixButton/_button_sufix
 mixin filterDateDropdown
 
     form(action="#").field-elements_dateDropdown_filter
         input(class="datepicker_filter " type="text" )
 
-        button(class="field-elements_dateDropdown_filter__sufix-buttton icon-sufix " type="submit" )
+        +button_sufix
 
 
 script(src='../components/filterDateDropdown/filterDateDropdown.js')

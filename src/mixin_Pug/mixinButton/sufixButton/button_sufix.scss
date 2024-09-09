@@ -1,0 +1,9 @@
+@import './src/variable/variable';
+.sufix-buttton{
+  @include sufix_button;
+}
+
+.icon-sufix{
+  @include icon_sufix;
+  //padding-left: 40px;
+}

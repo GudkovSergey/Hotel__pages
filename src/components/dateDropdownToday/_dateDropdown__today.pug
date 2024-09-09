@@ -1,11 +1,11 @@
+include ../../mixin_Pug/mixinButton/sufixButton/_button_sufix
 
 mixin dateDropdownToday
 
-
     form(action="#").field-elements_dateDropdown_today
         input(class="datapicker__today " type="text" placeholder="ДД.ММ.ГГГ")
+        +button_sufix
 
-        button(class="field-elements_dateDropdown_today__sufix-buttton icon-sufix " type="submit" )
 
 
 script(src='../components/dateDropdown_today/dateDropdown_today.js')

@@ -2,6 +2,14 @@
 
 .field-elements__guest {
  @include field;
+
+}
+//Ширина поля 320
+.field_width_320{
+  width: 320px;
+}
+//Ширина поля 266
+.field_width_266{
   width: 266px;
 }
 
@@ -18,11 +26,11 @@
   color: $Dark_Shade_75;
 }
 
-.field-elements__guest__sufix-buttton{
- @include sufix_button;
-}
-
-.field-elements__guest .icon-sufix{
-  @include icon_sufix;
-  padding-left: 40px;
-}
+//.field-elements__guest__sufix-buttton{
+// @include sufix_button;
+//}
+//
+//.field-elements__guest .icon-sufix{
+//  @include icon_sufix;
+//  padding-left: 40px;
+//}

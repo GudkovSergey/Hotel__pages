@@ -1,10 +1,10 @@
-mixin dateDropdown
+include ../../mixin_Pug/mixinButton/sufixButton/_button_sufix
 
+mixin dateDropdown
 
     form(action="#").field-elements_dateDropdown
         input(class="datepicker " type="text" placeholder="ДД.ММ.ГГГГ")
-
-        button(class="field-elements_dateDropdown__sufix-buttton icon-sufix " type="submit" )
+        +button_sufix
 
 
 script(src='../components/dateDropdown/dateDropdown.js')
